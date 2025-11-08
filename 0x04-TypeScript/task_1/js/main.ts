@@ -31,7 +31,7 @@ interface StudentClassId {
     displayName(): string;
 }
 interface IStudentConstructor {
-    new (firstName: string, lastName: string): IStudentClass;
+    new (firstName: string, lastName: string): StudentClassId;
 }
 
 class studentClass implements StudentClassId{
