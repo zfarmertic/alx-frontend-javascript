@@ -17,8 +17,8 @@ interface printTeacherFunction{
     (firstName: string, lastName: string): string;
 }
 
-function printTeacher(firstName: string, lastName: string): string{
+function printTeacher(firstName, lastName){
      return (`${firstName.charAt(0)}. ${lastName}`)
 }
 
-console.log(printTeacher("Merit", "Onogbotsere"))
+console.log(printTeacher("John", "Doe"))
