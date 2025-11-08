@@ -20,7 +20,7 @@ interface printTeacherFunction{
 }
 
 function printTeacher({ firstName, lastName }: { firstName: string; lastName: string }): string {
-  return `${firstName.charAt(0)}. ${lastName}`;
+  return "`${firstName.charAt(0)}. ${lastName}`";
 }
 
 console.log(printTeacher({ firstName: "John", lastName: "Doe" })); // "J. Doe"
