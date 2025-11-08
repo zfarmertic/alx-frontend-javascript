@@ -27,27 +27,25 @@ console.log(printTeacher({ firstName: "John", lastName: "Doe" })); // "J. Doe"
 
 
 
+//Task 4 --- Writing Class
 
-
-interface StudentClassId {
+interface StudentClassInterface {
     firstName: string;
     lastName: string;
     workOnHomework(): string;
     displayName(): string;
 }
 interface IStudentConstructor {
-    new (firstName: string, lastName: string): StudentClassId;
+    new (firstName: string, lastName: string): StudentClassInterface;
 }
 
-class StudentClass implements StudentClassId{
-    constructor(public firstName: string, public lastName: string){
-            
-    }
-    workOnHomework () : string{
-        return("Currently working")
+class StudentClass implements StudentClassInterface{
+    constructor(public firstName: string, public lastName: string){}
+    workOnHomework():string{
+        return "Currently working"
         
     }
-    displayName() : string{
+    displayName():string{
         return this.firstName
     }
 }
