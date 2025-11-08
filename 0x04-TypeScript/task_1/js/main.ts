@@ -22,3 +22,27 @@ function printTeacher (firstName, lastName){
 }
 
 console.log(printTeacher("John", "Doe"))
+
+
+interface StudentClassId {
+    firstName: string;
+    lastName: string;
+    workOnHomework(): string;
+    displayName(): string;
+}
+interface IStudentConstructor {
+    new (firstName: string, lastName: string): IStudentClass;
+}
+
+class studentClass implements StudentClassId{
+    constructor(public firstName: string, public lastName: string){
+            
+    }
+    workOnHomework () : string{
+        return("Currently working")
+        
+    }
+    displayName() : string{
+        return(`${this.firstName}`)
+    }
+}
