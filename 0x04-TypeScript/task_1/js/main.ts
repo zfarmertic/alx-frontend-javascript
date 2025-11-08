@@ -34,7 +34,7 @@ interface IStudentConstructor {
     new (firstName: string, lastName: string): StudentClassId;
 }
 
-class studentClass implements StudentClassId{
+class StudentClass implements StudentClassId{
     constructor(public firstName: string, public lastName: string){
             
     }
