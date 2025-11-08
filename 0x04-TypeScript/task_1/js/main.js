@@ -1,8 +1,5 @@
-var director1 = {
-    firstName: "ochuku",
-    lastName: "Uche",
-    fullTimeEmployee: false,
-    location: "oghara",
-    numberOfReports: 46
-};
-console.log(director1.lastName);
+function printTeacher(firstName, lastName) {
+    var first = firstName.charAt(0) + ".";
+    return ("".concat(first, " ").concat(lastName));
+}
+console.log(printTeacher("Merit", "Onogbotsere"));
