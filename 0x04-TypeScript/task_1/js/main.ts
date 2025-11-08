@@ -15,15 +15,16 @@ interface Director extends Teacher{
 
 //Task 3 --- Printing Teachers
 
-interface printTeacherFunction{
-    (firstName: string, lastName: string): string;
+interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
 }
 
-function printTeacher({ firstName, lastName }: { firstName: string; lastName: string }): string {
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
   return `${firstName.charAt(0)}. ${lastName}`;
-}
+};
 
-console.log(printTeacher({ firstName: "John", lastName: "Doe" }));
+console.log(printTeacher("John", "Doe")); // Output: "J. Doe"
+
 
 
 
