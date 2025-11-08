@@ -43,6 +43,6 @@ class studentClass implements StudentClassId{
         
     }
     displayName() : string{
-        return(`${this.firstName}`)
+        return this.firstName
     }
 }
